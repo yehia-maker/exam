@@ -1,0 +1,384 @@
+/* *{
+    overflow-x: hidden;
+} */
+.home{
+    background-image: linear-gradient(rgb(0, 0, 0,0.5),rgb(0, 0, 0,0.6)),url(../images/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.navbar-nav .nav-link.active {
+    color: #1c1c1c; /* Change color of active link */
+    font-weight: bold;
+    text-decoration: underline;
+}
+.navbar {
+    transition: background-color 0.3s;
+    z-index: 100;
+}
+
+.navbar.scrolled {
+    background-color: white; /* Change to white when scrolled */
+    box-shadow: 3px 3px 3px rgb(228, 225, 225);
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold; /* Example styling for active link */
+    text-decoration: underline; /* Example styling for active link */
+}
+
+.home h1{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+.home-icons i{
+    background-color: rgb(0, 0, 0, 0.5);
+}
+.skill-progress span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 95%;
+    border-radius: 5px;
+    background-color: rgb(31, 30, 30);
+}
+.skill-progress span::after{
+    content: "95%";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 5px;
+    left: 95%;
+    color: rgb(255, 255, 255);
+
+}
+.branding span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 95%;
+    border-radius: 5px;
+    background-color: rgb(31, 30, 30);
+}
+.branding span::after{
+    content: "80%";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 5px;
+    left: 80%;
+    color: white;
+
+}
+.development span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 95%;
+    border-radius: 5px;
+    background-color: rgb(31, 30, 30);
+}
+.development span::after{
+    content: "90%";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 5px;
+    left: 90%;
+    color: white;
+}
+.content-about .btn1{
+    transition: 0.7s;
+    background-color: rgb(31, 30, 30);
+    color: white;
+}
+.content-about .btn1:hover{
+    background-color: transparent;
+    color: black;
+}
+.content-about .btn2{
+    transition: 0.7s;
+    background-color: white;
+    color: black;
+}
+.content-about .btn2:hover{
+    background-color: rgb(31, 30, 30);
+    color: white;
+}
+.services h1{
+    font-size: 40px;
+    font-weight: 900;
+    font-family: "Montserrat", sans-serif;
+    z-index: 1;
+}
+.services h1::before{
+    content: "";
+    top: 55px;
+    position: absolute;
+    border: 1px solid transparent;
+    background-image: radial-gradient(circle, rgb(206, 202, 202) 1px, transparent 1px);
+    background-size: 10px 10px;
+    width: calc(12% + 20px); 
+    height: calc(30% + 10px);
+    z-index: -1;
+    left: 43%;
+    bottom: -20px;
+    transform: translateX(-50%,-50%);
+}
+.services i{
+    transition: 0.5s;
+}
+.img-about{
+    position: relative;
+}
+.img-about::before{
+    content: "";
+    position: absolute;
+    border: 1px solid transparent;
+    background-image: radial-gradient(circle, rgb(216, 212, 212) 1px, transparent 1px);
+    background-size: 10px 10px; /* Adjust spacing of dots */
+    width: calc(100% + 20px); /* To surround the container */
+    height: calc(80% + 10px);
+    top: 100px;
+    z-index: -1;
+    left: -30px;
+    bottom: -20px;
+}
+.service-content:hover .services-icon {
+    background-color: #1c1c1c;
+    color: white
+}
+.services-icon{
+    font-size: 20px;
+    height: 70px;
+    width: 70px;
+    background-color: rgb(230, 225, 225);
+
+    border-radius: 50%;
+    text-align: center;
+    line-height: 68px;
+    margin: auto;
+    margin-bottom: 25px;
+
+}
+ .portofolio h1::after{
+    content: "";
+    top: 55px;
+    position: absolute;
+    border: 1px solid transparent;
+    background-image: radial-gradient(circle, rgb(206, 202, 202) 1px, transparent 1px);
+    background-size: 10px 10px;
+    width: calc(12% + 20px); 
+    height: calc(30% + 10px);
+    z-index: -1;
+    left: 43%;
+    bottom: -20px;
+    transform: translateX(-50%,-50%);
+ } 
+.portofolio-content figure{
+    position: relative;
+}
+.portofolio-content figcaption{
+    position: absolute;
+    background-color: white;
+    top: 0px;
+    height: 95%;
+    width: 96%;
+    opacity: 0;
+    transition: 1s;
+    margin: 10px;
+    color: black;
+}
+.portofolio-content figcaption:hover{
+    opacity: 1;
+}
+figcaption i{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+figcaption i:hover{
+    background-color: white;
+    color: black;
+}
+/* .carousel-item img{
+    border-radius: 50%;
+} */
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+}
+.Testimonials h1{
+    font-size: 40px;
+    font-weight: 900;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(53, 52, 52);
+
+}
+.carousel-inner img{
+    width: 25%;
+   }
+.Testimonials h1:after{
+    content: "";
+    top: 55px;
+    position: absolute;
+    border: 1px solid transparent;
+    background-image: radial-gradient(circle, rgb(221, 216, 216) 1px, transparent 1px);
+    background-size: 10px 10px;
+    width: calc(23% + 20px); 
+    height: calc(30% + 10px);
+    z-index:-1;
+    left: 38%;
+    bottom: -20px;
+    transform: translateX(-50%,-50%);
+}
+.team h1{
+    font-size: 40px;
+    font-weight: 900;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(53, 52, 52);
+
+}
+.team h1:after{
+    content: "";
+    top: 55px;
+    position: absolute;
+    border: 1px solid transparent;
+    background-image: radial-gradient(circle, rgb(206, 202, 202) 1px, transparent 1px);
+    background-size: 10px 10px;
+    width: calc(15% + 20px); 
+    height: calc(30% + 10px);
+    z-index: -1;
+    left: 42%;
+    bottom: -20px;
+    transform: translateX(-50%,-50%);
+}
+.team-img-caption h1,h3{
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+.hover-team-content{
+    position: absolute;
+    background-color:rgb(255, 255, 255, 0.9);
+    top: 0px;
+    height: 98%;
+    width: 100%;
+    transition: 0.6s ;
+    color: black;
+    opacity: 0;
+    transition-timing-function: ease-in-out;
+    overflow: hidden;
+    padding: 20px;
+ 
+}
+.team-content:hover .hover-team-content{
+    opacity: 1;
+    transform: rotateY(180deg);
+
+}
+.hover-team-content .text-content {
+    transform: rotateY(180deg); /* Rotate text back to normal */
+    font-size: 18px;
+    font-weight: bold;
+}
+.team figure{
+    transition: 0.4;
+    overflow: hidden;
+    
+}
+.team figure:hover{
+    transform: scale(1.1);
+    overflow: hidden;
+}
+.team figcaption{
+    background-color: rgba(52, 52, 52, .8);
+}
+.test{
+    border: 1px solid black;
+    font-size: 20px;
+    height: 34px;
+    width: 34px;
+    background-color: black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 34px;
+    color: white;
+}
+.test:hover{
+    background-color: white;
+    color: black;
+}
+footer h1{
+    font-size: 40px;
+    font-weight: 900;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(53, 52, 52);
+
+}
+.team .demo{
+    height: 375px;
+}
+footer h1:after{
+    content: "";
+    top: 55px;
+    position: absolute;
+    border: 1px solid transparent;
+    background-image: radial-gradient(circle, rgb(206, 202, 202) 1px, transparent 1px);
+    background-size: 10px 10px;
+    width: calc(15% + 20px); 
+    height: calc(30% + 10px);
+    z-index: -1;
+    left: 42%;
+    bottom: -20px;
+    transform: translateX(-50%,-50%);
+}
+footer .footer-icon{
+    width: 60px;
+    height: 60px;
+    line-height: 75px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgb(228, 222, 222);
+    transition: 0.7s;
+}
+footer i{
+    font-size: 34px;
+}
+.footer-icon:hover{
+    background-color: #1c1c1c;
+    color: #eee;
+}
+footer button{
+    background-color: #1c1c1c;
+    color: #eee;
+    transition: 0.7s;
+}
+footer button:hover{
+    background-color: white;
+    color: #1c1c1c;
+
+}
+.navbar-collapse.show {
+    background-color: white; /* White background when expanded */
+    text-align: center;
+    color: #1c1c1c;
+}
+.navbar-collapse.show .nav-link {
+    text-align: center; /* Center text inside navbar links */
+    color: black; /* Text color black when expanded */
+}
+.bg-custom {
+    background-color: white !important; /* Force white background */
+}
+ 
+@media  screen and (min-width:768px){
+   .carousel-inner img{
+    width: 10%;
+   }
+}
